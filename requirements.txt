@@ -1,3 +1,4 @@
+mock
 setuptools
 streamlit==1.31.0
 crewai==0.30.11
