@@ -1,8 +1,12 @@
+import sys
+import mock
+sys.modules['pkg_resources'] = mock.Mock()
 import streamlit as st
 import os
 from crewai import Agent, Task, Crew, Process
 from langchain_openai import ChatOpenAI
 from crewai_tools import SerperDevTool
+
 
 # --- 1. UI CONFIGURATION ---
 st.set_page_config(page_title="AI Travel Agent", page_icon="🌍", layout="wide")
