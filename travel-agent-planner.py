@@ -1,6 +1,6 @@
 import sys
-import mock
-sys.modules['pkg_resources'] = mock.Mock()
+from unittest.mock import MagicMock
+sys.modules['pkg_resources'] = MagicMock()
 import streamlit as st
 import os
 from crewai import Agent, Task, Crew, Process
